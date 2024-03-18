@@ -1,7 +1,8 @@
 - no_team_fields = false if local_assigns[:no_team_fields].nil?
 
 .card.mb-3
-  .card-header Match Settings
+  .card-header
+    %b Match Settings
   .card-body
     - unless no_team_fields
       / TODO: Properly handle errors here.
