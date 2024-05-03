@@ -7,7 +7,7 @@ class LeaguesController < ApplicationController
 
   before_action only: [:medals] do
     @league = League.includes(:tiebreakers).find(params[:league_id])
-  end  
+  end
 
   before_action :require_user_leagues_permission, only: [:new, :create, :destroy]
   before_action :require_user_league_permission, only: [:edit, :update, :modify, :medals]

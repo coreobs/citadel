@@ -29,13 +29,13 @@
                   %ul{:class => "steamids", style: "display: none"} 
                     - roster.users.each do |player|
                       %li
-                        =player.steam_id              
+                        =player.steam_id
                 %td= roster.points
                 - @league.tiebreakers.each do |tiebreaker|
                   %th= tiebreaker.value_for(roster)
                 %td
-                  %input{:name => "list", :type => "checkbox"}   
-    %button.btn.btn-primary.btn-lg.btn-block{:type => "button", :id => "download"} Download    
+                  %input{:name => "list", :type => "checkbox"}
+    %button.btn.btn-primary.btn-lg.btn-block{:type => "button", :id => "download"} Download
     %br
 
 :javascript
@@ -53,13 +53,13 @@
       $("#download").click(function () {
           var ids = [];
           $("input:checked").each(function () {
-              list = $(this).parent().parent().find(".steamids > li");       
+              list = $(this).parent().parent().find(".steamids > li");
               list.each(function () { 
                   var temp = $(this).html().replace(/(\r\n\t|\n|\r\t)/gm,"");
                   ids.push(temp);
               });
-          });  
+          });
           console.log(ids);
           download("MedalSteam64IDs" + Date.now() + ".txt", ids.join("\n"));
       });
-  }); 
+  });
