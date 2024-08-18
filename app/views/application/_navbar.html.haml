@@ -18,22 +18,22 @@
     Rules
     %span.caret
 
-  .dropdown-menu.dropdown-menu-animated#rules-dropdown-menu
+  %ul.dropdown-menu.nav-dropdown-menu#rules-dropdown-menu
     .dropdown-header
       Competitive Rulesets
 
-    = link_to('Global Ruleset', 'https://docs.ozfortress.com/rules/global', class: 'dropdown-item')
-    = link_to('Sixes Ruleset', 'https://docs.ozfortress.com/rules/sixes', class: 'dropdown-item')
-    = link_to('Highlander Ruleset', 'https://docs.ozfortress.com/rules/highlander', class: 'dropdown-item')
+    %li= link_to('Global Ruleset', 'https://docs.ozfortress.com/rules/global', class: 'dropdown-item')
+    %li= link_to('Sixes Ruleset', 'https://docs.ozfortress.com/rules/sixes', class: 'dropdown-item')
+    %li= link_to('Highlander Ruleset', 'https://docs.ozfortress.com/rules/highlander', class: 'dropdown-item')
 
     .dropdown-divider
 
     .dropdown-header
       Behaviour
 
-    = link_to('Community Guidelines', 'https://docs.ozfortress.com/rules/community_guidelines', class: 'dropdown-item')
-    = link_to('Player Behaviour Infractions', 'https://docs.ozfortress.com/rules/infractions', class: 'dropdown-item')
-    = link_to('League Penalties', 'https://docs.ozfortress.com/rules/penalties', class: 'dropdown-item')
+    %li= link_to('Community Guidelines', 'https://docs.ozfortress.com/rules/community_guidelines', class: 'dropdown-item')
+    %li= link_to('Player Behaviour Infractions', 'https://docs.ozfortress.com/rules/infractions', class: 'dropdown-item')
+    %li= link_to('League Penalties', 'https://docs.ozfortress.com/rules/penalties', class: 'dropdown-item')
 
     :javascript
       // Prevent inside clicks from dismissing dropdown
@@ -47,30 +47,30 @@
     Help
     %span.caret
 
-  .dropdown-menu.dropdown-menu-animated#help-dropdown-menu
+  %ul.dropdown-menu.nav-dropdown-menu#help-dropdown-menu
     .dropdown-header
       General Info
 
-    = link_to('Staff', 'https://docs.ozfortress.com/info/staff', class: 'dropdown-item')
-    = link_to('Map History', 'https://docs.ozfortress.com/info/map_history', class: 'dropdown-item')
-    = link_to('Anti-Cheat and You', 'https://docs.ozfortress.com/info/anticheat_and_you', class: 'dropdown-item')
-    = link_to('Ban Appeals', 'https://forms.gle/WmkpBvb4AFEc1cxaA', class: 'dropdown-item')
+    %li= link_to('Staff', 'https://docs.ozfortress.com/info/staff', class: 'dropdown-item')
+    %li= link_to('Map History', 'https://docs.ozfortress.com/info/map_history', class: 'dropdown-item')
+    %li= link_to('Anti-Cheat and You', 'https://docs.ozfortress.com/info/anticheat_and_you', class: 'dropdown-item')
+    %li= link_to('Ban Appeals', 'https://forms.gle/WmkpBvb4AFEc1cxaA', class: 'dropdown-item')
 
     .dropdown-divider
 
     .dropdown-header
       Guides
 
-    = link_to('Book a Server', 'https://docs.ozfortress.com/guides/book_a_server', class: 'dropdown-item')
-    = link_to('Newbie Guide', 'https://docs.ozfortress.com/guides/newbie_guide', class: 'dropdown-item')
+    %li= link_to('Book a Server', 'https://docs.ozfortress.com/guides/book_a_server', class: 'dropdown-item')
+    %li= link_to('Newbie Guide', 'https://docs.ozfortress.com/guides/newbie_guide', class: 'dropdown-item')
 
     .dropdown-divider
 
     .dropdown-header
       Other
 
-    = link_to('Verify Rosters tool', 'https://verify.ozfortress.com', target: :_blank, rel: :noopener, class: 'dropdown-item')
-    = link_to('Support & Reporting', 'https://docs.ozfortress.com/support/landing/', target: :_blank, rel: :noopener, class: 'dropdown-item')
+    %li= link_to('Verify Rosters tool', 'https://verify.ozfortress.com', target: :_blank, rel: :noopener, class: 'dropdown-item')
+    %li= link_to('Support & Reporting', 'https://docs.ozfortress.com/support/landing/', target: :_blank, rel: :noopener, class: 'dropdown-item')
 
     :javascript
       // Prevent inside clicks from dismissing dropdown
